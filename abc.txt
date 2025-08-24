@@ -1,0 +1,44 @@
+
+
+base
+: 
+"stations"
+clouds
+: 
+{all: 100}
+cod
+: 
+200
+coord
+: 
+{lon: 77.4, lat: 23.2667}
+dt
+: 
+1755937203
+id
+: 
+1275841
+main
+: 
+{temp: 23.63, feels_like: 24.37, temp_min: 23.63, temp_max: 23.63, pressure: 1004, …}
+name
+: 
+"Bhopal"
+sys
+: 
+{country: 'IN', sunrise: 1755908975, sunset: 1755955019}
+timezone
+: 
+19800
+visibility
+: 
+10000
+weather
+: 
+[{…}]
+wind
+: 
+{speed: 6.92, deg: 257, gust: 12.55}
+[[Prototype]]
+: 
+Object
