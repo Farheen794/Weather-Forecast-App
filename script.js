@@ -5,9 +5,10 @@ async function getWeather(city) {
 
     try {
         const response = await fetch(url);
-        if (!response.ok) {
+        if (!response.ok) {            
             throw new Error(`Error: ${response.status}`);
         }
+        invalid.innerHTML=""
         const data = await response.json();
         city_name.innerHTML=city
         description.innerHTML=data.weather[0]?.main || "N/A";
@@ -24,6 +25,7 @@ async function getWeather(city) {
         pressure.innerHTML=data.main?.pressure ?? "N/A";
         console.log(data);
     } catch (error) {
+        invalid.innerHTML="<h2>Invalid City, Please Enter Valid City Name</h2>"
         console.error(error);
     }
 }
