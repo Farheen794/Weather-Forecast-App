@@ -18,8 +18,8 @@ async function getWeather(city) {
         wind_speed.innerHTML=data.wind?.speed ?? "N/A";
         wind_gust.innerHTML=data.wind?.gust ?? "N/A";
         wind_degree.innerHTML=data.wind?.deg ?? "N/A";
-        min_temp.innerHTML=data.main?.temp_min ?? "N/A";
-        max_temp.innerHTML=data.main?.temp_max ?? "N/A";
+        min_temp.innerHTML=data.main?.temp_min-0.5 ?? "N/A";
+        max_temp.innerHTML=data.main?.temp_max+1 ?? "N/A";
         Feels_like.innerHTML=data.main?.feels_like ?? "N/A";
         visibility.innerHTML=data?.visibility ?? "N/A";
         pressure.innerHTML=data.main?.pressure ?? "N/A";
